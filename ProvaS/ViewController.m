@@ -61,6 +61,42 @@
     return celula;
 }
 
+-(void)backPressed: (id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+// Ao clicar na celula
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // abrindo nova view com os detalhes do item selecionado.
+    DetailViewController *detailVC = [[UIStoryboard storyboardWithName:@"Main"bundle:nil] instantiateViewControllerWithIdentifier:@"idDetailViewController"];
+    [detailVC setModalTransitionStyle:2];
+    
+    // Botão para voltar
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailVC];
+
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Voltar" style:UIBarButtonItemStyleDone target:nil action:@selector(backPressed:)];
+    
+    detailVC.navigationItem.leftBarButtonItem = backButton;
+    
+    
+    
+    
+    NSMutableDictionary* teste = [arrayLocal objectAtIndex:indexPath.row];
+    [detailVC buscaDados:[teste objectForKey:@"name"] and:[[teste objectForKey:@"owner"] objectForKey:@"login"]];
+    
+    [self presentViewController:navController animated:YES completion:^{
+        
+    }];
+    
+    
+    
+    
+    // para desmarcar a celula selecionada
+    [tabela deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 
 @end
+

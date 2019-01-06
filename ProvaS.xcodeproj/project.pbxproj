@@ -15,6 +15,8 @@
 		3F4E609921E1F8E7004D48E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E609821E1F8E7004D48E9 /* main.m */; };
 		3F4E60A321E1F8E7004D48E9 /* ProvaSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E60A221E1F8E7004D48E9 /* ProvaSTests.m */; };
 		3F4E60AE21E1F8E7004D48E9 /* ProvaSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E60AD21E1F8E7004D48E9 /* ProvaSUITests.m */; };
+		3F4E60C921E22D58004D48E9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E60C521E22D58004D48E9 /* DetailViewController.m */; };
+		3F4E60CA21E22D58004D48E9 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E60C721E22D58004D48E9 /* DetailTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		3F4E60A921E1F8E7004D48E9 /* ProvaSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProvaSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4E60AD21E1F8E7004D48E9 /* ProvaSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProvaSUITests.m; sourceTree = "<group>"; };
 		3F4E60AF21E1F8E7004D48E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4E60C521E22D58004D48E9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3F4E60C621E22D58004D48E9 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		3F4E60C721E22D58004D48E9 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		3F4E60C821E22D58004D48E9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		3F4E608821E1F8E3004D48E9 /* ProvaS */ = {
 			isa = PBXGroup;
 			children = (
+				3F4E60C421E22D58004D48E9 /* Details */,
 				3F4E608921E1F8E3004D48E9 /* AppDelegate.h */,
 				3F4E608A21E1F8E3004D48E9 /* AppDelegate.m */,
 				3F4E608C21E1F8E3004D48E9 /* ViewController.h */,
@@ -130,6 +137,17 @@
 				3F4E60AF21E1F8E7004D48E9 /* Info.plist */,
 			);
 			path = ProvaSUITests;
+			sourceTree = "<group>";
+		};
+		3F4E60C421E22D58004D48E9 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				3F4E60C821E22D58004D48E9 /* DetailViewController.h */,
+				3F4E60C521E22D58004D48E9 /* DetailViewController.m */,
+				3F4E60C621E22D58004D48E9 /* DetailTableViewCell.h */,
+				3F4E60C721E22D58004D48E9 /* DetailTableViewCell.m */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4E608E21E1F8E3004D48E9 /* ViewController.m in Sources */,
+				3F4E60CA21E22D58004D48E9 /* DetailTableViewCell.m in Sources */,
 				3F4E609921E1F8E7004D48E9 /* main.m in Sources */,
 				3F4E608B21E1F8E3004D48E9 /* AppDelegate.m in Sources */,
+				3F4E60C921E22D58004D48E9 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
