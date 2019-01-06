@@ -9,7 +9,7 @@
 #import "DetailTableViewCell.h"
 
 @implementation DetailTableViewCell
-@synthesize url, state, title, body, milestone;
+@synthesize url, state, title, body, avatar;
 @synthesize bgColor = _bgColor;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier

@@ -13,13 +13,15 @@
 @end
 
 @implementation ViewController
-@synthesize tabela;
+@synthesize tabela, navBar;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    // Modelo simples encontrado facilmente com uma pesquisa no google
     
+    navBar.topItem.title = @"Repositórios Públicos Java do GitHub";
+    
+    // o Ideal seria criar os objetos para criar as responsabilidades de cada um, porem para ser arpido foi assim mesmo.
     NSString *url = @"https://api.github.com/search/repositories?q=language:Java&sort=stars)";
     NSData *jsonData = [NSData dataWithContentsOfURL: [NSURL URLWithString:url]];
     

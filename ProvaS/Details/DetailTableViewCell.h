@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) IBOutlet UILabel* state;
 @property (nonatomic, strong) IBOutlet UILabel* title;
 @property (nonatomic, strong) IBOutlet UILabel* body;
-@property (nonatomic, strong) IBOutlet UILabel* milestone;
 
 @property (nonatomic, strong) IBOutlet UIImageView* avatar;
 

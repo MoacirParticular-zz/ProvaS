@@ -14,6 +14,7 @@
 {
     NSMutableArray* arrayLocal;
 }
+@property (weak, nonatomic) IBOutlet UINavigationBar *navBar;
 
 @property (strong, nonatomic) IBOutlet UITableView *tabela;
 
